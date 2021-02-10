@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!-- saved from url=(0720)https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&searchTerm=&productsViewed=19056&idProduct=19056&apiVersion=2.3&enterType=TRIGGER&iframeStatus=MINIMIZED&recoverSession=&loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&baseUrl=//www.elnaturalista.com/de/de/&statusFromTrigger=Just%20Looking&statusVisitor=&tokenVisitor=&tokenSession=&visitorOverflow=&connection=&statusBeforeMin=&currencyVisitor=EUR&pluginVersion=2.3&locale=de-DE&edition=2&SessionWithoutAgent=&AssignedAgent=&ExclusiveAgent=null&platform=magento2&NoAgentConnectAssignDept=&sessionSummaryId=&initVideoCall=undefined&AllowedDepartmentsId=&HideSearch=undefined&CheckAgentsInDepartment=undefined -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        ModalVisitor
+    </title>
+        <meta name="description" content="Modal Visitor description">
+            <meta name="keywords" content="Moda Visitor keys">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <link href="./font-awesome.css" rel="stylesheet">
+
+    
+    <script>window.Promise || document.write('<script src="./api/source/js/ext/ie11-fixes.js"><\/script>');</script>
+
+
+<link href="./CoviewerV3Css.css" rel="stylesheet">
+<script src="./VisitorJsDesktop.js.download"></script>
+<script src="./RewriteJsDesktop.js.download"></script>
+
+
+
+        <style data-test-id="corp-color-visitor" data-test-corp-color="#84BD00" type="text/css">
+       .TxtCorp{ color:#84BD00  !important}
+       .BkgCorp{ background-color:#84BD00   !important}
+       .BorderCorp{ border-color: #84BD00   !important}
+       .BorderUpCorp{  border-top-color: #84BD00   !important}
+       .BorderBottomCorp{  border-bottom-color: #84BD00   !important}
+        </style>
+
+    <style type="text/css">
+       .BackgroundColorLC {background-color:rgb(25, 25, 25)  !important}
+       .TextColorLC { color:rgb(209, 209, 209)   !important}
+
+    </style>
+
+
+
+        <style type="text/css">
+          .ChatBkgTheme{ background-image:none; background-color:#ffffff}
+        </style>
+
+        <link data-test-id="theme-visitor" data-test-theme="/api/source/css/themes/theme27.css" href="./theme27.css" rel="stylesheet">
+        
+
+
+        <script type="text/javascript" src="./I18nCoviewer"></script>
+
+
+
+
+
+
+
+
+</head>
+<body class="custom-body">
+
+    
+
+    
+
+    <div id="coviewer-wrapper" class="coviewer-wrapper custom-coviewer-wrapper CHBkg2">
+        <div id="sidebubble" class="sidebubble" data-bind="visible: oct8ne.sideBubbles.currentBody()!=null" style="display: none;">
+    <div id="sidebubble-wrapper" class="sidebubble-wrapper">
+        <div id="sidebubble-content" class="sidebubble-content" data-bind="html:oct8ne.sideBubbles.currentBody; "></div>
+        <p class="sidebubble-close-button" data-bind="event:{ click:function(){ oct8ne.sideBubbles.hide()}}">
+            Schliessen
+        </p>
+    </div>
+</div>
+
+<div class="header-visor CHBkg1">
+    
+    <ul class="nodes-lists custom-coviewer-nodes-lists ">
+        <li id="viewed-items" class="custom-coviewer-viewed-items active CVBkg5 CVTxt4" title="Liste aller Artikel, die in dieser Sitzung angezeigt wurden" data-bind="click: function() { viewedVM.setActiveTab()},attr: { &#39;class&#39;:&#39;custom-coviewer-viewed-items   &#39; }, css :{&#39;active CVBkg5 CVTxt4&#39;: viewedVM.isActive() == true , &#39;ActiveFalse &#39;:viewedVM.isActive() == false }">
+            <span data-bind="attr: {&#39;class&#39;:&#39;glyph icon-common-viewed-icon custom-coviewer-viewed-icon&#39;}, css :{&#39;CVTxt4 custom-coviewer-viewed-icon-active&#39;: viewedVM.isActive() == true ,&#39;CVTxt2 custom-coviewer-viewed-icon-inactive &#39;:viewedVM.isActive() == false }" class="glyph icon-common-viewed-icon custom-coviewer-viewed-icon CVTxt4 custom-coviewer-viewed-icon-active"></span>
+            <span class="inner-title">Gesehen &nbsp; </span>
+            <span data-bind="text:viewedVM.nodes().length">1</span>
+        </li>
+            <li id="my-list-items" title="Gegenstände, die Sie für die Überprüfung ausgewählt haben" data-bind="click: function() { mylistVM.setActiveTab()},attr: {&#39;class&#39;:&#39;custom-coviewer-mylist-items &#39;}, css :{&#39; active CVBkg5 CVTxt4 &#39;: mylistVM.isActive() == true , &#39;ActiveFalse&#39;:mylistVM.isActive() == false }" class="custom-coviewer-mylist-items ActiveFalse">
+                <span data-bind="attr: {&#39;class&#39;:&#39; glyph icon-common-wishlist-icon custom-coviewer-mylist-icon&#39;}, css :{&#39;CVTxt4 custom-coviewer-mylist-icon-active&#39;: mylistVM.isActive() == true , &#39;CVTxt2 custom-coviewer-mylist-icon-inactive&#39;:mylistVM.isActive() == false }" class="glyph icon-common-wishlist-icon custom-coviewer-mylist-icon CVTxt2 custom-coviewer-mylist-icon-inactive"></span><span class="inner-title">Meine Liste &nbsp; </span><span data-bind="text:mylistVM.nodes().length">0</span>
+            </li>
+                    <li id="my-shopping-items" title="Artikel, die Sie in Ihren Warenkorb gelegt haben" data-bind="click: function() { mycartVM.setActiveTab()},attr: { &#39;class&#39;:&#39;custom-coviewer-mycart-items &#39; }, css :{&#39; active CVBkg5 CVTxt4 &#39;: mycartVM.isActive() == true , &#39;ActiveFalse&#39;:mycartVM.isActive() == false }" class="custom-coviewer-mycart-items ActiveFalse">
+                <span data-bind="attr: {&#39;class&#39;:&#39;glyph icon-common-mycart-icon  custom-coviewer-mycart-icon&#39; }, css :{&#39;CVTxt4 custom-coviewer-mycart-icon-active&#39;: mycartVM.isActive() == true , &#39;CVTxt2 custom-coviewer-mycart-icon-inactive&#39;:mycartVM.isActive() == false }" class="glyph icon-common-mycart-icon custom-coviewer-mycart-icon CVTxt2 custom-coviewer-mycart-icon-inactive"></span><span class="inner-title">Warenkorb &nbsp; </span><span data-bind="text:mycartVM.nodes().length">0</span>
+            </li>
+    </ul>
+
+</div>
+<div class="oct8ne-content custom-coviewer-content" id="oct8ne-content">
+    <div id="add-to-mycart " class="add-to-mycart add-to-mycart BkgCorp CHTxt2 ">Artikel zum Warenkorb hinzugefügt<p class="BorderBottomCorp"></p></div>
+    <div class="oct8ne-nodes mCustomScrollbar _mCS_1 mCS-autoHide" id="oct8ne-nodes"><div id="mCSB_1" class="mCustomScrollBox mCS-dark-thin mCSB_horizontal mCSB_inside" tabindex="0" style="max-height: none;"><div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: 0px; width: 84px; left: -84px;" dir="ltr">
+        <ul data-bind="style:{width: viewedVM.carouselsWidth}" style="width: 84px;">
+            <!-- ko if: viewedVM.isActive() == true -->
+            <!-- ko foreach:viewedVM.nodes -->
+            <li class="custom-coviewer-viewed-product active BorderCorp">
+                <div>
+                    <a data-bind="attr:{&#39;data-nodeid&#39;:internalId}" data-nodeid="19056">
+                        <img src="./n5741_pleasant_black_p_d1bf.jpg" alt="" data-bind="attr: { &#39;src&#39;: thumbnail, &#39;title&#39;: title }" onload="$o.core.centerImage(this, 55, 55)" onerror="this.src = &#39;//oct8necdneu.azureedge.net/api/img/core/no-thumb-resources.png&#39;" class="mCS_img_loaded" title="5741 FOREST MAN" style="width: 55px; margin-top: 0px;">
+                    </a>
+                </div>
+            </li>
+            <!--/ko-->
+            <!--/ko-->
+            <!-- ko if: mylistVM.isActive() == true --><!--/ko-->
+            <!-- ko if: mycartVM.isActive() == true --><!--/ko-->
+        </ul>
+    </div><div id="mCSB_1_scrollbar_horizontal" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-thin mCSB_scrollTools_horizontal" style="display: block;"><a href="https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&amp;searchTerm=&amp;productsViewed=19056&amp;idProduct=19056&amp;apiVersion=2.3&amp;enterType=TRIGGER&amp;iframeStatus=MINIMIZED&amp;recoverSession=&amp;loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&amp;baseUrl=//www.elnaturalista.com/de/de/&amp;statusFromTrigger=Just%20Looking&amp;statusVisitor=&amp;tokenVisitor=&amp;tokenSession=&amp;visitorOverflow=&amp;connection=&amp;statusBeforeMin=&amp;currencyVisitor=EUR&amp;pluginVersion=2.3&amp;locale=de-DE&amp;edition=2&amp;SessionWithoutAgent=&amp;AssignedAgent=&amp;ExclusiveAgent=null&amp;platform=magento2&amp;NoAgentConnectAssignDept=&amp;sessionSummaryId=&amp;initVideoCall=undefined&amp;AllowedDepartmentsId=&amp;HideSearch=undefined&amp;CheckAgentsInDepartment=undefined#" class="mCSB_buttonLeft" style="display: block;"></a><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_horizontal" class="mCSB_dragger" style="position: absolute; min-width: 30px; display: block; width: 0px; left: 0px;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div><a href="https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&amp;searchTerm=&amp;productsViewed=19056&amp;idProduct=19056&amp;apiVersion=2.3&amp;enterType=TRIGGER&amp;iframeStatus=MINIMIZED&amp;recoverSession=&amp;loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&amp;baseUrl=//www.elnaturalista.com/de/de/&amp;statusFromTrigger=Just%20Looking&amp;statusVisitor=&amp;tokenVisitor=&amp;tokenSession=&amp;visitorOverflow=&amp;connection=&amp;statusBeforeMin=&amp;currencyVisitor=EUR&amp;pluginVersion=2.3&amp;locale=de-DE&amp;edition=2&amp;SessionWithoutAgent=&amp;AssignedAgent=&amp;ExclusiveAgent=null&amp;platform=magento2&amp;NoAgentConnectAssignDept=&amp;sessionSummaryId=&amp;initVideoCall=undefined&amp;AllowedDepartmentsId=&amp;HideSearch=undefined&amp;CheckAgentsInDepartment=undefined#" class="mCSB_buttonRight" style="display: block;"></a></div></div></div>
+</div>
+
+<div class="oct8ne-coviewer custom-coviewer-canva" id="oct8ne-coviewer">
+    <div class="item-title-price">
+        <p id="item-title-up" class="CVTxt3 custom-coviewer-title-product view-in-page" title="Klicken um Produktseite anzusehen (Chat wird offen bleiben)" style="display: block;"><span class="main-title" title="5741 FOREST MAN">5741 FOREST MAN</span><p class="button-view-in-page BkgCorp"><span class="icon-common-view-in-page"></span><span>Siehe seite</span></p></p>
+            <div id="add-to-mylist-tool-visitor" title="Fügen Sie gewünschte Artikel zu ihrer Favoriten Liste" class="icon-common-wishlist-icon glyph CVTxt3 custom-coviewer-icon-mylist enabled" style="opacity: 1;">
+            </div>
+    </div>
+
+    <div class="loading-product  custom-coviewer-product-loading" id="loading-product" style="display: none;"></div>
+    <div id="prev-image" class="change-image prev-image  " style="display: none;"><div class="CVTxt1 custom-coviewer-prev-image icon-common-arrow-lateral-left"></div></div>
+    <div id="oct8ne-holder" class="oct8ne-holder">
+        <div id="video-wrapper" data-bind="with:youtube" style="width: 435px; height: 284px; background: #000; display: none">
+            <div id="youtubevideoplayer" style="z-index: 4; position: absolute; left: 0; top: 0; bottom: 0; right: 0;"></div>
+            <div id="youtubevideoplayer-controls" class="CVBkg1" style="z-index: 5; bottom: 0 !important;" data-bind="fadeVisible: videoPlayerIsReady">
+                <a href="https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&amp;searchTerm=&amp;productsViewed=19056&amp;idProduct=19056&amp;apiVersion=2.3&amp;enterType=TRIGGER&amp;iframeStatus=MINIMIZED&amp;recoverSession=&amp;loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&amp;baseUrl=//www.elnaturalista.com/de/de/&amp;statusFromTrigger=Just%20Looking&amp;statusVisitor=&amp;tokenVisitor=&amp;tokenSession=&amp;visitorOverflow=&amp;connection=&amp;statusBeforeMin=&amp;currencyVisitor=EUR&amp;pluginVersion=2.3&amp;locale=de-DE&amp;edition=2&amp;SessionWithoutAgent=&amp;AssignedAgent=&amp;ExclusiveAgent=null&amp;platform=magento2&amp;NoAgentConnectAssignDept=&amp;sessionSummaryId=&amp;initVideoCall=undefined&amp;AllowedDepartmentsId=&amp;HideSearch=undefined&amp;CheckAgentsInDepartment=undefined#" class="play icon-common-play-icon CVBkg2 CVTxt1" data-bind="disable: isPlaying, click: playClicked, css: { disabled: isPlaying }"></a>
+                <a href="https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&amp;searchTerm=&amp;productsViewed=19056&amp;idProduct=19056&amp;apiVersion=2.3&amp;enterType=TRIGGER&amp;iframeStatus=MINIMIZED&amp;recoverSession=&amp;loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&amp;baseUrl=//www.elnaturalista.com/de/de/&amp;statusFromTrigger=Just%20Looking&amp;statusVisitor=&amp;tokenVisitor=&amp;tokenSession=&amp;visitorOverflow=&amp;connection=&amp;statusBeforeMin=&amp;currencyVisitor=EUR&amp;pluginVersion=2.3&amp;locale=de-DE&amp;edition=2&amp;SessionWithoutAgent=&amp;AssignedAgent=&amp;ExclusiveAgent=null&amp;platform=magento2&amp;NoAgentConnectAssignDept=&amp;sessionSummaryId=&amp;initVideoCall=undefined&amp;AllowedDepartmentsId=&amp;HideSearch=undefined&amp;CheckAgentsInDepartment=undefined#" class="pause icon-common-pause-icon CVBkg2 CVTxt1 disabled" data-bind="enable: isPlaying, click: pauseClicked, css: { disabled: !isPlaying() }"></a>
+                <span class="slider  CVTxt2 noUi-target noUi-ltr noUi-horizontal noUi-connect"><div class="noUi-base"><div class="noUi-origin noUi-background" style="left: 0%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></span>
+                <span class="timer   CVTxt2" data-bind="text: currentTimePositionFormatted">00:00:00</span>
+                <a href="https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&amp;searchTerm=&amp;productsViewed=19056&amp;idProduct=19056&amp;apiVersion=2.3&amp;enterType=TRIGGER&amp;iframeStatus=MINIMIZED&amp;recoverSession=&amp;loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&amp;baseUrl=//www.elnaturalista.com/de/de/&amp;statusFromTrigger=Just%20Looking&amp;statusVisitor=&amp;tokenVisitor=&amp;tokenSession=&amp;visitorOverflow=&amp;connection=&amp;statusBeforeMin=&amp;currencyVisitor=EUR&amp;pluginVersion=2.3&amp;locale=de-DE&amp;edition=2&amp;SessionWithoutAgent=&amp;AssignedAgent=&amp;ExclusiveAgent=null&amp;platform=magento2&amp;NoAgentConnectAssignDept=&amp;sessionSummaryId=&amp;initVideoCall=undefined&amp;AllowedDepartmentsId=&amp;HideSearch=undefined&amp;CheckAgentsInDepartment=undefined#" class="speaker CVTxt2 unmuted" data-bind="click: speakerClicked, css: { muted: isMuted, unmuted: !isMuted() }"></a>
+            </div>
+            <div id="video-loading" data-bind="fadeVisible: !videoPlayerIsReady(), fadeOutDuration: 2000" style="display: none; z-index: 6;">
+                <div data-bind="visible: !videoPlayerIsReady()" class="loading">
+                    <img src="./loading.gif">
+                    laden von Video
+                    <p>Wir bereiten etwas unglaubliches vor, bitte warten Sie ein paar Sekunden ..</p>
+                </div>
+                <div data-bind="visible: videoPlayerIsReady" class="ready" style="display: none;">
+                    Bereit!
+                </div>
+            </div>
+        </div>
+
+        <div id="oct8ne-helper" class="pointing" style="display: block; height: 246px; width: 164.071px; top: 0px; left: 152.965px;">
+            <img src="./n5741_piernas_6478.jpg" alt="" style="display: inline-block; height: 246px; width: 164.071px;">
+            <canvas id="localCanvas" style="z-index: 100; touch-action: none; cursor: move; width: 164.071px; height: 246px;" linewidth="2px" width="164" height="246"></canvas>
+            <canvas id="remoteCanvas" style="z-index: 90;" linewidth="2px" width="164" height="246"></canvas>
+        </div>
+
+    <span class="oct8ne-pencil icon-common-pen" id="pencil-me" draggable="false" alt="" style="position: absolute;font-weight: bold;pointer-events: none;display: none;font-size: 30px;margin-left: -5px;margin-top: -26px; text-shadow: rgb(255, 255, 255) 1px 1px 2px;z-index: 120;  z-index: 120;"></span></div>
+    <div id="next-image" class="change-image next-image " style="display: block;"><div class="CVTxt1 custom-coviewer-next-image icon-common-arrow-lateral-right"></div></div>
+    <div class="other-cursor icon-common-arrow TxtCorp">
+        <p class="agent-avatar avatar-agent presentation" style="background: url(&quot;/api/img/backoffice/human-avatar.png&quot;) center center / cover;"></p>
+    </div>
+    <div class="my-cursor"></div>
+    <div id="add-to-mylist" class="add-to-mylist custom-coviewer-add-to-my-list BkgCorp CVTxt2" style="display: none;">Artikel zu Meiner Liste hinzugefügt<p class="BorderBottomCorp"></p></div>
+    <div class="product-tools">
+        <div id="images-dots-wrapper" class="images-dots-wrapper">
+            <ul id="items-order-list" class="images-dots" style="margin: 12px auto; width: 168px;"><li class="current custom-coviewer-image-dots CVBkg4"></li><li class="CVBkg5 custom-coviewer-image-dots "></li><li class="CVBkg5 custom-coviewer-image-dots "></li><li class="CVBkg5 custom-coviewer-image-dots "></li><li class="CVBkg5 custom-coviewer-image-dots "></li><li class="CVBkg5 custom-coviewer-image-dots "></li></ul>
+        </div>
+        <p class="items-number-list custom-coviewer-items-number-list CVTxt3" id="items-number-list" style="display: none;">View <span class="current-img"></span>&nbsp;von&nbsp;<span class="total-img"></span></p>
+            <div id="zoom-tool" class="custom-coviewer-zoom-tool zoom-tool icon-common-zoomin-button CVTxt3" title="1ter und 2ter Klick zoomt Bild; 3ter Klick geht zur Ausgangsposition zurück"></div>
+
+            <div id="draw-button" class="icon-common-pen CVTxt3"></div>
+            <div id="color-picker">
+                <ul>
+                    <li class="icon-common-pen pencil-red"></li>
+                    <li class="icon-common-pen pencil-blue"></li>
+                    <li class="icon-common-pen pencil-green"></li>
+                    <li class="icon-common-pen pencil-orange"></li>
+                </ul>
+            </div>
+    </div>
+    <div id="more-info-item" class="more-info-item ">
+        <div id="info-icon-button" class="info-icon-button CVTxt3">
+            Beschreibung
+            
+        </div>
+        <p id="item-description" class="item-description CVTxt3 custom-coviewer-description-text ">Wood grains and tree trunks are very present in the design of the new line of boots and shoes</p>
+    </div>
+</div>
+<div class="coviewer-tools custom-coviewer-tools">
+    <div id="price-wrapper" class="price-wrapper CVTxt1" style="display: block;"><div id="normal-price" style="display: block;"><div style="line-height:43px;font-size:2em"><span>95,97&nbsp;€</span></div></div><div id="sale-price" style="display: none;"><div class="offer-icon custom-coviewer-sale-icon"><div class="sale-text custom-coviewer-sale-text BkgCorp"><span>RAB.</span></div><div class="BorderUpCorp"></div></div><div style="font-size:1.33em; text-decoration:line-through;"><span class="price-old">[0]</span></div><div style="font-size:1.33em ;line-height: 20px;"><span class="price-new">[1]</span></div></div></div>
+    <div id="price-wrapper-catalog" class="price-wrapper-catalog CVTxt1" style="display: none;">
+        <span id="item-price-up" class="custom-coviewer-price price CVTxt1">undefined95,97&nbsp;€</span>
+    </div>
+
+
+
+
+        <div data-bind="css:{ checkoutActive: mycartVM.nodes().length &gt; 0 },click: function() {mycartVM.accessToCheckout()}" id="checkout-tool" class="custom-coviewer-add-mylist-tool checkout-tool CVBorder1 CVTxt1" title="Bereit zum Kauf? Zur Kasse gehen">
+            Kasse
+        </div>
+                <!--DOMAIN ID 8730 = emagister quieren el color Corporativo en el boton de add to cart-->
+            <div id="add-to-cart-tool" class="custom-coviewer-add-cart-tool add-to-cart-tool CVBorder1 CVTxt1 enabled" title="Legen Sie den Artikel im Viewer in den Warenkorb" style="opacity: 1;">
+                <span class="icon-common-mycart-icon CVTxt4"></span>Hinzufügen
+            </div>
+    <div id="view-catalog-page" class="add-to-cart-tool CVBorder1" title="Katalogproduktseite" style="display: none;">
+        <a href="https://backoffice-eu.oct8ne.com/VisitorVisorV3?license=9117EC81AD28D725AC5AA6348F3C3808&amp;searchTerm=&amp;productsViewed=19056&amp;idProduct=19056&amp;apiVersion=2.3&amp;enterType=TRIGGER&amp;iframeStatus=MINIMIZED&amp;recoverSession=&amp;loginUrl=//www.elnaturalista.com/de/de/customer/account/login/?oct8ne&amp;baseUrl=//www.elnaturalista.com/de/de/&amp;statusFromTrigger=Just%20Looking&amp;statusVisitor=&amp;tokenVisitor=&amp;tokenSession=&amp;visitorOverflow=&amp;connection=&amp;statusBeforeMin=&amp;currencyVisitor=EUR&amp;pluginVersion=2.3&amp;locale=de-DE&amp;edition=2&amp;SessionWithoutAgent=&amp;AssignedAgent=&amp;ExclusiveAgent=null&amp;platform=magento2&amp;NoAgentConnectAssignDept=&amp;sessionSummaryId=&amp;initVideoCall=undefined&amp;AllowedDepartmentsId=&amp;HideSearch=undefined&amp;CheckAgentsInDepartment=undefined#" target="_blank" class="CVTxt1">
+            Produktseite
+        </a>
+    </div>
+</div>
+
+
+
+
+    </div>
+
+    <div id="chat-wrapper" class="chat-wrapper custom-chat-wrapper hidden" style="display: block;">
+        <div class="chat-header CHBkg1 custom-chat-header">
+    <!-- Mostramos el botón que abre/cierra el covisor en el visitante si el valor que nos llega por el controlador es "true" -->
+
+        <span id="show-coviewer-chat" class="show-coviewer icon-common-open-visor custom-chat-icon-openviewer CHTxt5"></span>
+        <span id="pending-products" class="warning-visitor pending-products custom-minimized-pending-products">1</span>
+
+
+    <div class="connecting-agent CHBkg1 CHTxt5" style="display: none;">Verbindung mit einem Agenten.</div>
+    
+
+    <div class="agent-info custom-chat-agent-info">
+        <!--OJO ID=id="agent-info"-->
+        <div class="agent-avatar-image" style="background: url(&quot;/api/img/backoffice/human-avatar.png&quot;) center center / cover;"></div>
+
+        <div class="before-join-agent">
+            <div class="name-agent custom-chat-name-agent CHTxt5">LifeconceptV</div>
+            <div class="message-agent custom-chat-status-agent CHTxt5" title="Ist verfügbar">
+                Ist verfügbar
+            </div>
+        </div>
+
+        <div class="after-join-agent">
+            <div class="name-agent custom-chat-name-agent CHTxt5">LifeconceptV</div>
+            <div class="message-agent custom-chat-status-agent CHTxt5" title="Chatten">Chatten</div>
+                    <div id="rating-area" class="rating-area">
+                        <span id="good" class="good-rate CHTxt5" title="Bewerten Sie diesen Agenten als gut"></span>
+                        <span id="bad" class="bad-rate CHTxt5" title="Bewerten Sie diesen Agenten als schlecht"></span>
+                    </div>
+        </div>
+        <div id="rating-stars" class="rating-stars HBkg2 CHTxt4">
+            <div class="rating-area-menu-stars-title">Values ​​the attention of our agents</div>
+            <div id="rating-area-stars" class="rating-area-stars">
+                <input type="radio" id="star5" name="rate" value="5">
+                <label class="icon-common-star-regular" for="star5"></label>
+                <input type="radio" id="star4" name="rate" value="4">
+                <label class="icon-common-star-regular" for="star4"></label>
+                <input type="radio" id="star3" name="rate" value="3">
+                <label class="icon-common-star-regular" for="star3"></label>
+                <input type="radio" id="star2" name="rate" value="2">
+                <label class="icon-common-star-regular" for="star2"></label>
+                <input type="radio" id="star1" name="rate" value="1">
+                <label class="icon-common-star-regular" for="star1"></label>
+            </div>
+            <textarea placeholder="Hinterlassen Sie uns ein Kommentar (optional) …" maxlength="250" class="CHTxt4"></textarea>
+            <span id="save-rating-stars" class="CHBkg1 CHTxt5 button-rate">Senden</span><span id="skip-rating-stars">Überspringen</span>
+        </div>
+        <div id="comment-agent" class="comment-agent HBkg2 CHTxt4">
+            <textarea placeholder="Hinterlassen Sie uns ein Kommentar (optional) …" maxlength="250" class="CHTxt4"></textarea>
+            <span id="save-rating" class="CHBkg1 CHTxt5 button-rate">Senden</span><span id="skip-rating">Überspringen</span>
+        </div>
+    </div>
+    
+    <div class="chat-menu custom-chat-menu">
+        <span class="icon-common-minimize-button CHTxt5"></span>
+        <span class="icon-common-minimize-button CHTxt5"></span>
+        <span class="icon-common-minimize-button CHTxt5"></span>
+    </div>
+
+</div>
+<!-- Estrechamos el menú del chat cliente si está desactivado el coviewer, ya que perdemos la opción "Get Summary" -->
+<div id="chat-menu-options-chat" class="chat-menu-options  custom-chat-menu-options CHBkg2">
+    <ul>
+            <li class="custom-chat-menu-sound-option CHBkg2"><span id="sound-option" class="sound-option HTxt1">Ton<span class="icon-common-volume-on HTxt1"></span></span></li>
+
+            <li id="send-summary-menu-chat" class="custom-chat-menu-send-summary send-summary-menu CHBkg2">
+                <span class="HTxt1">Überblick</span>
+                <p class="summary-advice CHTxt3">Erhalten Sie eine E-Mail-Zusammenfassung dieser Sitzung und aller von Ihnen angesehenen Produkte</p>
+                <input class="summary-input" type="email" placeholder="Email">
+                <div class="summary-button CHBkg3">Senden</div>
+            </li>
+        <li id="minimize-chat-chat" class="custom-chat-menu-minimize minimize-chat CHBkg2"><span class="HTxt1">Schliessen</span></li>
+        
+    </ul>
+
+    <div class="send-summary-feedback"><p>Eine Zusammenfassung dieser Sitzung und aller von Ihnen angesehenen Produkte wurde gesendet</p><p class="feedback-ok CHBkg3">OK</p></div>
+</div>
+
+
+<div class="chat-visitor custom-chat-visitor CHBkg1-99">
+
+
+
+    <div id="oct8ne-communications" class="oct8ne-communications CHBorder2">
+        <div class="real-background ChatBkgTheme"></div> <!-- Debera ser un Model.ChatBckgUrl-->
+        <div class="oct8ne-chat-room custom-chat-room  mCustomScrollbar _mCS_2 mCS-autoHide mCS_no_scrollbar" id="oct8ne-chat-room" style="visibility: visible; opacity: 1;"><div id="mCSB_2" class="mCustomScrollBox mCS-dark-thin mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;"><div id="mCSB_2_container" class="mCSB_container mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+            <ul style="" data-bind="visible: true">
+
+                <!-- ko foreach: oct8ne.speak.messages -->
+                <!-- ko if: category == "CHAT" || category == "PRODUCT" || category == "FORM" || category == "RESPONSE" || category == "DOCS" || category == "CHOICE"  || category == "SIDEBUBBLELINK" || category == "CHOICERESPONSE"--><!--/ko-->
+                <!-- ko if: category == "MESSAGERATING"--><!--/ko-->
+                <!-- ko if: category == "VALIDATION" --><!--/ko-->
+                <!-- ko if: category == "GDPR" --><!--/ko-->
+                <!-- ko if: category == "CANNED" -->
+                <!-- ko if: type == "WELCOME" || type == "VIPMESSAGE" || type == "TRANSFER" || type == "INACTIVITY1" || type == "INACTIVITY2" || type =="INACTIVITY3" || type == "SENDSESSION" || type == "AGENTSDISCONNECT" || type == "TRANSFERFROMLOGOUT" || type == "NOMOREAGENTS" || type == "AGENTSBUSY" || type == "OVERBOOKING" || type == "AGENTAVAILABLE" || type == "RECONNECTSESSION" || type == "ENDSESSIONBOT" || type == "INITSHARING" || type == "ENDFNAC" || type == "ENDTOYSRUS" || type == "ENDLOREAL" || type == "ENDLOREALOVERBOOKING" || type == "EXTENSIONADVICE" || type == "ENDRETAILERSLOREAL" || type == "ENDNYXCOSMETICS" || type == "ENDLEXUS"  --><!--/ko-->
+                <!-- ko if: type == "TRIGGER"-->
+                <li data-bind="css: { &#39;visitor&#39;: sentBy==&#39;V&#39;,&#39;agent&#39;: sentBy==&#39;A&#39;}" class="agent">
+                    <div data-bind="attr: { &#39;class&#39;:&#39;custom-trigger-message&#39;},css: { &#39;CHBkg1 custom-chat-message-visitor&#39;: sentBy==&#39;V&#39;,&#39;CHBkg2  custom-chat-message-agent&#39;: sentBy==&#39;A&#39;}" class="custom-trigger-message CHBkg2 custom-chat-message-agent">
+                        <!-- <p><span class="message-name" data-bind="text: name, css: { 'CHTxt5': sentBy=='V','CHTxt4': sentBy=='A'}"></span><span class="message-time" data-bind="text: time, css: { 'CHTxt5': sentBy=='V','CHTxt4': sentBy=='A'}"></span></p> -->
+                        <div class="holder trigger-message">
+                            <p class="message CHTxt4" data-bind="html: body,  css: { &#39;CHTxt5&#39;:sentBy==&#39;V&#39; , &#39;CHTxt4&#39;: sentBy==&#39;A&#39; }">Bienvenido a nuestra web, si puedo ayudarte en algo, no dudes en contactar conmigo.&nbsp;<div>Welcome to our web, if we can help you please contact us.</div></p>
+                        </div>
+                        <p><span class="message-time CHTxt4" data-bind="text: time, css: { &#39;CHTxt5&#39;: sentBy==&#39;V&#39;,&#39;CHTxt4&#39;: sentBy==&#39;A&#39;}">14:09</span></p>
+                        <span class="pointer agent CHBorder2" data-bind="css: { &#39;visitor CHBorder1&#39;:sentBy==&#39;V&#39; , &#39;agent CHBorder2&#39;: sentBy==&#39;A&#39;}"></span>
+                    </div>
+                </li>
+                <!--/ko-->
+                <!--/ko-->
+                <!--/ko-->
+
+                <div class="is-typing-layer">
+                    <span class="CHTxt2"></span>
+                    <p class="CHTxt4 CHBkg2 is-typing">···</p>
+
+                </div>
+
+
+            </ul>
+
+            <div id="go-to-bottom" class="go-to-bottom CHBkg2 CHTxt3 icon-common-arrowdown"><div id="warning-chat" class="warning-chat"></div></div>
+        </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark-thin mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 1159px; max-height: 358px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+        <div id="just-looking-option" class="just-looking-option">
+            <div class="just-looking-header">
+                <p>Guckend</p>
+            </div>
+            <div class="just-looking-option-message">Shoppen Sie weiter frei mit dem Viewer. Wir sind dann zur Stelle, wenn Sie uns brauchen!</div>
+            <div class="just-looking-option-message2">Wenn Sie Fragen haben, dann bitten unten eingeben</div>
+        </div>
+        <iframe id="skype-frame" style="display: none" src="./saved_resource.html"></iframe>
+        <div id="preview-pasted" class="preview-pasted CVBorder5">
+            <div id="pasted-image" class="pasted-image"></div>
+            <div title="Senden Sie das angehängte Bild" id="send-pasted-image" class="send-pasted-image icon-common-send"></div>
+            <span title="Entfernen Sie das angehängte Bild" id="close-preview-pasted" class="icon-common-close-filters"></span>
+        </div>
+    </div>
+
+        <p class="powered-by-oct8ne-new CHTxt3  custom-chat-powered-oct8ne">
+            Powered by
+            <img alt="Powered by Oct8ne" src="./oct8ne-simple.png">
+        </p>
+</div>
+<div id="chat-tool-box" class="chat-tool-box  custom-chat-tool-box  CHBkg2">
+
+    <textarea id="chat-input" class="CHTxt4 chat-input-emoji custom-chat-input " maxlength="10000" placeholder="Bitte hier eingeben" data-emojiable="converted" data-emoji-input="unicode" data-id="366f1992-c848-48f1-89ac-89cbf3465579" data-type="original-input" style="display: none;"></textarea><div class="emoji-wysiwyg-editor CHTxt4 chat-input-emoji custom-chat-input" maxlength="10000" data-id="366f1992-c848-48f1-89ac-89cbf3465579" data-type="input" placeholder="Bitte hier eingeben" contenteditable="true" style="height: 0px; display: block;" readonly="readonly"></div><div class="emoji-menu" data-id="366f1992-c848-48f1-89ac-89cbf3465579" data-type="menu" style="display: none;"><div class="emoji-items-wrap1"><table class="emoji-menu-tabs"><tbody><tr><td><a class="emoji-menu-tab icon-recent-selected"></a></td><td><a class="emoji-menu-tab icon-smile"></a></td><td><a class="emoji-menu-tab icon-flower"></a></td><td><a class="emoji-menu-tab icon-bell"></a></td><td><a class="emoji-menu-tab icon-car"></a></td><td><a class="emoji-menu-tab icon-grid"></a></td></tr></tbody></table><div class="emoji-items-wrap mobile_scrollable_wrap"><div class="emoji-items"><a href="javascript:void(0)" title=":joy:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -550px 0px no-repeat;background-size:675px 175px;" alt=":joy:"><span class="label">:joy:</span></a><a href="javascript:void(0)" title=":kissing_heart:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -175px 0px no-repeat;background-size:675px 175px;" alt=":kissing_heart:"><span class="label">:kissing_heart:</span></a><a href="javascript:void(0)" title=":heart:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -250px -150px no-repeat;background-size:675px 175px;" alt=":heart:"><span class="label">:heart:</span></a><a href="javascript:void(0)" title=":heart_eyes:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -150px 0px no-repeat;background-size:675px 175px;" alt=":heart_eyes:"><span class="label">:heart_eyes:</span></a><a href="javascript:void(0)" title=":blush:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -75px 0px no-repeat;background-size:675px 175px;" alt=":blush:"><span class="label">:blush:</span></a><a href="javascript:void(0)" title=":grin:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -375px 0px no-repeat;background-size:675px 175px;" alt=":grin:"><span class="label">:grin:</span></a><a href="javascript:void(0)" title=":+1:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -600px -75px no-repeat;background-size:675px 175px;" alt=":+1:"><span class="label">:+1:</span></a><a href="javascript:void(0)" title=":relaxed:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -100px 0px no-repeat;background-size:675px 175px;" alt=":relaxed:"><span class="label">:relaxed:</span></a><a href="javascript:void(0)" title=":pensive:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -400px 0px no-repeat;background-size:675px 175px;" alt=":pensive:"><span class="label">:pensive:</span></a><a href="javascript:void(0)" title=":smile:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) 0px 0px no-repeat;background-size:675px 175px;" alt=":smile:"><span class="label">:smile:</span></a><a href="javascript:void(0)" title=":sob:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -575px 0px no-repeat;background-size:675px 175px;" alt=":sob:"><span class="label">:sob:</span></a><a href="javascript:void(0)" title=":kiss:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -475px -150px no-repeat;background-size:675px 175px;" alt=":kiss:"><span class="label">:kiss:</span></a><a href="javascript:void(0)" title=":unamused:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -450px 0px no-repeat;background-size:675px 175px;" alt=":unamused:"><span class="label">:unamused:</span></a><a href="javascript:void(0)" title=":flushed:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -350px 0px no-repeat;background-size:675px 175px;" alt=":flushed:"><span class="label">:flushed:</span></a><a href="javascript:void(0)" title=":stuck_out_tongue_winking_eye:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -275px 0px no-repeat;background-size:675px 175px;" alt=":stuck_out_tongue_winking_eye:"><span class="label">:stuck_out_tongue_winking_eye:</span></a><a href="javascript:void(0)" title=":see_no_evil:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -75px -75px no-repeat;background-size:675px 175px;" alt=":see_no_evil:"><span class="label">:see_no_evil:</span></a><a href="javascript:void(0)" title=":wink:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -125px 0px no-repeat;background-size:675px 175px;" alt=":wink:"><span class="label">:wink:</span></a><a href="javascript:void(0)" title=":smiley:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -25px 0px no-repeat;background-size:675px 175px;" alt=":smiley:"><span class="label">:smiley:</span></a><a href="javascript:void(0)" title=":cry:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -525px 0px no-repeat;background-size:675px 175px;" alt=":cry:"><span class="label">:cry:</span></a><a href="javascript:void(0)" title=":stuck_out_tongue_closed_eyes:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -300px 0px no-repeat;background-size:675px 175px;" alt=":stuck_out_tongue_closed_eyes:"><span class="label">:stuck_out_tongue_closed_eyes:</span></a><a href="javascript:void(0)" title=":scream:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -125px -25px no-repeat;background-size:675px 175px;" alt=":scream:"><span class="label">:scream:</span></a><a href="javascript:void(0)" title=":rage:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -175px -25px no-repeat;background-size:675px 175px;" alt=":rage:"><span class="label">:rage:</span></a><a href="javascript:void(0)" title=":smirk:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -50px -50px no-repeat;background-size:675px 175px;" alt=":smirk:"><span class="label">:smirk:</span></a><a href="javascript:void(0)" title=":disappointed:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -475px 0px no-repeat;background-size:675px 175px;" alt=":disappointed:"><span class="label">:disappointed:</span></a><a href="javascript:void(0)" title=":sweat_smile:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) 0px -25px no-repeat;background-size:675px 175px;" alt=":sweat_smile:"><span class="label">:sweat_smile:</span></a><a href="javascript:void(0)" title=":kissing_closed_eyes:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -200px 0px no-repeat;background-size:675px 175px;" alt=":kissing_closed_eyes:"><span class="label">:kissing_closed_eyes:</span></a><a href="javascript:void(0)" title=":speak_no_evil:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -125px -75px no-repeat;background-size:675px 175px;" alt=":speak_no_evil:"><span class="label">:speak_no_evil:</span></a><a href="javascript:void(0)" title=":relieved:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -425px 0px no-repeat;background-size:675px 175px;" alt=":relieved:"><span class="label">:relieved:</span></a><a href="javascript:void(0)" title=":grinning:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -50px 0px no-repeat;background-size:675px 175px;" alt=":grinning:"><span class="label">:grinning:</span></a><a href="javascript:void(0)" title=":yum:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -275px -25px no-repeat;background-size:675px 175px;" alt=":yum:"><span class="label">:yum:</span></a><a href="javascript:void(0)" title=":ok_hand:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -650px -75px no-repeat;background-size:675px 175px;" alt=":ok_hand:"><span class="label">:ok_hand:</span></a><a href="javascript:void(0)" title=":neutral_face:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -600px -25px no-repeat;background-size:675px 175px;" alt=":neutral_face:"><span class="label">:neutral_face:</span></a><a href="javascript:void(0)" title=":confused:"><img src="./blank.gif" class="img" style="display:inline-block;width:25px;height:25px;background:url(&#39;../api/img/plugins/emoji//emoji_spritesheet_0.png&#39;) -625px -25px no-repeat;background-size:675px 175px;" alt=":confused:"><span class="label">:confused:</span></a></div></div></div></div><i class="emoji-picker-icon emoji-picker fa fa-smile-o" data-id="366f1992-c848-48f1-89ac-89cbf3465579" data-type="picker" style="display: inline-block;"></i>
+
+
+        <div id="upload-visitor-tool" class="upload-visitor-tool custom-chat-upload-tool icon-common-clip-upload CHTxt3" title="Laden Sie ein Bild hoch, um dem Agenten zu zeigen, was Sie suchen.">
+            <form id="upload-visitor-form" enctype="multipart/form-data" target="hidden_upload" method="post" action="https://upload-eu.oct8ne.com/Files/SaveVisitorImage">
+                <input id="upload-visitor-file-path" type="file" name="files" class="hidden">
+                <label id="visitor-upload-button" class="share-image" for="upload-visitor-file-path"></label>
+                <input id="upload-token-visitor" type="hidden" name="token">
+                <input id="upload-token-room" type="hidden" name="room">
+                <input type="hidden" value="Visitor" name="who">
+                <input type="hidden" value="Coviwer" name="type">
+                <iframe id="hidden_upload" name="hidden_upload" class="hidden" src="./saved_resource(1).html"></iframe>
+            </form>
+        </div>
+
+</div>
+
+
+        <div id="access-form-wrapper" class="access-form-wrapper custom-access-form-wrapper CHBkg2">
+            <div class="form-header custom-email-us-header CHBkg1 CHTxt5">
+    <div class="icon-common-minimize minimize-icon-wrapper CHTxt5"></div>
+    <div class="chat-menu custom-email-us-menu">
+        <span class="icon-common-minimize-button CHTxt5"></span>
+        <span class="icon-common-minimize-button CHTxt5"></span>
+        <span class="icon-common-minimize-button CHTxt5"></span>
+    </div>
+</div>
+
+
+<div id="access-form-lay" class="access-form-lay">
+    <div id="info-wrapper" class="info-wrapper">
+            <p class="CHTxt4 canned-trigger"></p>
+        <p class="CHTxt4 title-section">Kontakt Informationen</p>
+        <input type="text" placeholder="Name" id="access-form-name" class="CHTxt1 custom-access-form-name">
+        <input type="text" placeholder="Email" id="access-form-email" class="CHTxt1 custom-access-form-email">
+
+
+
+        <p class="CHTxt4 title-section title-margin-top">Wie können wir Ihnen helfen?</p>
+        <textarea placeholder="Teilen Sie uns Ihre Zweifel" id="access-form-message" class="CHTxt1 custom-access-form-message"></textarea>
+    </div>
+
+    <div id="departments-wrapper" class="departments-wrapper">
+        <p class="CHTxt4 title-section">Sie haben eine Frage? Wir die  Antwort! Sagen Sie uns, mit welcher Abteilung Sie sprechen möchten, wir kümmern uns um den Rest.</p>
+        <select id="select-department" class="CHTxt1">
+            <option value="null">Abteilung wählen</option>
+        </select>
+    </div>
+
+    <p class="enter-chat CHTxt5 CHBkg4" id="send-access-form-info">Zum Chat gehen</p>
+</div>
+        </div>
+
+    </div>
+
+    <div id="email-us-form" class="email-us-form CHBkg2" style="display: none;">
+        
+
+
+<div class="form-header CHBkg1 CHTxt5 custom-email-us-header">
+    <!-- Mostramos el botón que abre/cierra el covisor en el visitante si el valor que nos llega por el controlador es "true" -->
+        <span id="show-coviewer" class="show-coviewer icon-common-open-visor custom-chat-icon-openviewer CHTxt5"></span>
+    <div class="chat-menu custom-email-us-menu">
+        <span class="icon-common-minimize-button CHTxt5"></span>
+        <span class="icon-common-minimize-button CHTxt5"></span>
+        <span class="icon-common-minimize-button CHTxt5"></span>
+    </div>
+
+</div>
+
+<div id="chat-menu-options" class="chat-menu-options  custom-chat-menu-options  CHBkg2">
+    <ul>
+
+        <!-- Si la edición no es free y tenemos el coviewer activado, mostramos la opción del menú "Get Summary" -->
+        <li id="send-summary-menu-form" class="custom-chat-menu-send-summary send-summary-menu CHBkg2">
+            <span class="HTxt1">Überblick</span>
+            <p class="summary-advice CHTxt3">Erhalten Sie eine E-Mail-Zusammenfassung dieser Sitzung und aller von Ihnen angesehenen Produkte</p>
+            <input class="summary-input" type="email" placeholder="Email" title="Email">
+            <div class="summary-button CHBkg3">Senden</div>
+        </li>
+        <li class="CHBkg2 custom-chat-menu-close close-iframe-visitor-js"><span class="HTxt1">Schliessen</span></li>
+    </ul>
+    <div class="send-summary-feedback"><p>Eine Zusammenfassung dieser Sitzung und aller von Ihnen angesehenen Produkte wurde gesendet</p><p class="feedback-ok CHBkg3">OK</p></div>
+</div>
+
+<div class="form-wrapper custom-email-us-form">
+    <!-- Estrechamos el menú del chat cliente si está desactivado el coviewer, ya que perdemos la opción "Get Summary" -->
+    <div class="form-contact">
+        <header>
+            <p class="CHTxt4 custom-email-us-text contact-form-header ">Nuestros agentes no están disponibles en este momento. Por favor, envíanos un breve mensaje con tu pregunta y nos pondremos en contacto contigo lo antes posible.</p>
+        </header>
+
+    <div class="contact-form-fields">
+        <input type="text" placeholder="Ihr Name" id="email-us-name" class="CHTxt1 custom-email-us-name-input" title="Name">
+        <input type="text" placeholder="EMail" id="email-us-email" class="CHTxt1 custom-email-us-mail-input" title="Email">
+
+                                <textarea title="Comments" id="email-us-comments" placeholder="Ihre Nachricht ..." class="CHTxt1 custom-email-us-message-input   "></textarea>
+    </div>
+            <div class="contact-form-footer">
+                <div id="send-email-us" class="send-email-us icon-common-maill custom-email-us-send-button CHTxt5 CHBkg1">Ok</div>
+
+                <div id="email-us-form-loading" class="email-us-form-loading">
+                    <img src="./spinner.gif">
+                </div>
+                <div id="email-us-form-message" class="email-us-form-message"></div>
+                <div id="email-success" class="email-success">
+                    <p></p>
+                </div>
+            </div>
+    </div>
+
+
+</div>
+<div class="footer-email-us">
+        <p class="powered-by-oct8ne-new CHTxt3  custom-chat-powered-oct8ne " id="powered-by-oct8ne-new">
+            Powered by
+            <img alt="Powered by Oct8ne" src="./oct8ne-simple.png">
+        </p>
+</div>
+
+    </div>
+    
+    
+
+    
+
+    <div id="summary-finalized-form" class="custom-summary-form summary-form" style="display: none;">
+<p class="CHTxt5 custom-summary-form-text">Holen Sie sich die E-Mail Zusammenfassung dieser Sitzung und alle Produkte, die Sie angesehen haben.</p>        <input type="text" value="" placeholder="Ihremail@address.com" class="custom-summary-form-email  email-adress-summary CHTxt1">
+        <input type="button" class="custom-summary-form-send-button send-summary-button CHBkg3 CHTxt5" value="EMail senden">
+        <input type="button" class="custom-summary-form-close-button close-summary-finalized-form CHBkg1 CHTxt5" value="Schliessen">
+
+         
+
+            <span id="back-to-oct8ne" class="back-to-oct8ne CHTxt5">❮ ❮ Zurück</span>
+        </div>
+
+         
+
+            <div id="pincode-wrapper" class="CVBkg1" style="display: none;">
+                <p class="CVTxt2">Geben Sie diesen Code in der Telefonantwortan, um zusammen nach Produkten zu suchen.</p>
+                <div class="CVTxt2" id="pin"></div>
+                <span class="CVTxt2">Schliessen</span>
+            </div>
+
+            <div class="block-modal" id="block-modal">
+                <div class="oct8ne-version" id="oct8ne-version">
+                    <!-- <p class="title"><span class="icon-common-close-button CHTxt1 "></span></p> -->
+                    <p class="CHTxt2">Urheberrechtlich geschützte Co-Viewing-Technologie, zur Verfügung gestellt von</p>
+                    <img src="./oct8ne-simple.png">
+                    <p class="CHTxt2">Version&nbsp;4.38.0&nbsp;· © 2018 Oct8ne inc.</p>
+
+                    <p class="CHTxt2">Finden Sie mehr uber Oct8ne unter <a class="colored" href="http://www.oct8ne.com/?utm_medium=Web&amp;utm_source=Oct8ne&amp;utm_campaign=Poweredby" target="_blank">&nbsp;www.oct8ne.com</a></p>
+                    <p><a class="CHTxt2" href="http://www.oct8ne.com/privacy-policy/?utm_medium=Web&amp;utm_source=Oct8ne&amp;utm_campaign=Poweredby" target="_blank">Privatsphäre und die gesetzlichen Bestimmungen</a></p>
+                    <div id="close-legend-new" class="close-legend CHTxt5 CHBkg1 ">Schliessen</div>
+                </div>
+
+            </div>
+
+            <div id="lay-AFK" class="lay-AFK">
+                <p>Oh, es tut uns leid!</p>
+                <p class="afk-content-advice"></p> 
+                <p>Klicken Sie auf, um die Sitzung neu zu starten.</p>
+                <div id="refresh-page-afk" class="refresh-page-afk CHBkg3 CHTxt2">ZURÜCK</div>
+            </div>
+
+            <div id="error-bot-message" class="error-bot-message">
+                <p style="margin-top:50px">
+                    In der Unterhaltung ist ein Fehler aufgetreten.
+                    <br>
+                    <br>
+                    Drücken Sie die Taste, um sie erneut zu starten.
+                </p>
+                <div id="refresh-page-error-bot" style="margin-top:25px;" class="refresh-page-error-bot refresh-page-afk CHBkg3 CHTxt2">   Neu starten</div>
+                <p class="error-bot-content" style=" position:absolute; bottom:5px; font-style:italic; word-break: break-word" id="error-bot-content-message"></p>
+            </div>
+
+            <div id="bottom-menu" class="bottom-menu">
+                <ul>
+                    <li id="minimize-by-menu" class="icon-common-close-filters CHBkg1" attr-lay="close"></li>
+                    
+                </ul>
+                
+                <div class="tool-tip close-advice">Chat minimieren</div>
+            </div>
+
+
+            <!--HIDDEN INPUTS-->
+            <div id="hiddens-model">
+                <input type="hidden" id="device" value="desktop">
+                <input type="hidden" id="my-token">
+                <input type="hidden" id="other-name" value="Agent">
+                <input type="hidden" id="my-name" value="Besucher">
+                <input type="hidden" id="platform" value="magento2">
+                <input type="hidden" id="my-shop-id" value="">
+                <input type="hidden" id="enter-type" value="TRIGGER">
+                <input type="hidden" id="token-session">
+                <input type="hidden" id="base-url" value="//www.elnaturalista.com/de/de/">
+                <input type="hidden" id="login-url" value="//www.elnaturalista.com/de/de/customer/account/login/?oct8ne">
+                <input type="hidden" id="api-version" value="2.3">
+                <input type="hidden" id="protocol-http" value="https:">
+                <input type="hidden" id="user-type" value="V">
+                <input type="hidden" id="internal-id" value="">
+                <input type="hidden" id="url-media" value="">
+                
+                <input type="hidden" id="currency-visitor" value="EUR">
+                <input type="hidden" id="locale" value="de-DE">
+                <input type="hidden" id="show-search" value="True">
+                <input type="hidden" id="domain-id" value="393">
+                <input type="hidden" id="agents-connected" value="True">
+                <input type="hidden" id="edition" value="2">
+                <input type="hidden" id="is-typing-text" value="True">
+                <input type="hidden" id="cart-redirection-forced" value="False">
+                <input type="hidden" id="enabled-departments" value="False">
+                <input type="hidden" id="conference-provider">
+                <input type="hidden" id="client-utils">
+                <input type="hidden" id="cdn-url" value="//oct8necdneu.azureedge.net/">
+                <input type="hidden" id="invite-link-assigned-agent">
+                <input type="hidden" id="invite-link-exclusive-agent" value="False">
+                <input type="hidden" id="visitors-overflow" value="True">
+                <input type="hidden" id="session-summary-id" value="0">
+                <input type="hidden" id="visitor-protocol-page" value="https:">
+                <input type="hidden" id="iframe-status" value="MINIMIZED">
+                <input type="hidden" id="status-before-min">
+                <input type="hidden" id="upload-url" value="https://upload-eu.oct8ne.com/">
+                <input type="hidden" id="server-environment" value="https://backoffice-eu.oct8ne.com/">
+                <input type="hidden" id="token-room">
+
+
+                    <input type="hidden" id="chrome-ss-extension-id" value="ibbpfblmgkcdpdbfjgighokkjipbohbp">
+                <p style="display:none;" class="mailHeaderBkg"></p>
+                <p style="display:none;" class="mailTextColor"></p>
+                <p style="display:none;" class="mailImageLogoSrc" data-attr="https://oct8neuploadcdneu.azureedge.net/logo/393/4E7B2B05897CE87FAC9515A3BFC616D9-2018-06-28-07-41-24-863914.jpg"></p>
+
+            </div>
+
+            <audio id="visitor-sound">
+
+                <source src="//oct8necdneu.azureedge.net/api/sound/oct8ne-visitor-alert.mp3">
+                <source src="//oct8necdneu.azureedge.net/api/sound/oct8ne-visitor-alert.ogg">
+            </audio>
+
+            <script>
+        $(function () {
+            if (window.self == window.top) {
+                window.location.href = "https:" + "//www.elnaturalista.com/de/de/";
+            }
+            else {
+                $("#results-search").show();
+                $("#visitor-protocol-page").val(window.location.protocol);
+
+                $o.settings = {
+                    inactivityVisitorMessages: ["Sind Sie noch da?", "Wir haben lange nichts von Ihnen vernommen. Sind Sie noch da?","Ihre Session wurde getrennt, da Sie zu lange inaktiv waren. Kommen Sie zurück und reden Sie mit uns, wenn Sie startbereit sind!"],
+                    inactivityVisitorStages: [ "600","360", "240"],
+                    license: "9117EC81AD28D725AC5AA6348F3C3808",
+                    welcomMessage: "",
+                    xframeDisabled: "False",
+                    templateAddToCart: "redirect",
+                    protocolHttp: "https:",
+                    priceLayout: {},
+                    showRatingSession : "False",
+                    showRatingAgent: "True",
+                    listDepts: [],
+                    inactivityAgentTime:"900",
+                    showCoviewer : "True",
+                    showSendSummary: "True",
+                    privacyPolicy:"",
+                    showAccessForm: "False" == "True" ? true : false,
+                    ssOnly: "False" == "True" ? true : false,
+                    allowTrackingProductsLite: "False" == "True" ? true : false,
+                    autoShowCoviewer: "True" == "True" ? true : false,
+                    allowPixelSale: false,
+                    allowUploads: "True" == "True" ? true : false,
+                    chatAlertsStyle: {
+                        type: "CALLOUTS",
+                        customStyles: "background:#ddd; color:lime; border-radius:30px; font-size:20px; border:5px dashed red"
+                        //AÑADIR DESKTOP-MOBILE
+                        //customStyles: {
+                        //    desktop: "background:#ddd; color:lime; border-radius:30px; font-size:20px; border:5px dashed red",
+                        //    mobile: "background:#ddd; color:lime; border-radius:30px; font-size:20px; border:5px dashed red"
+                        //}
+                        //"background: rgba(255, 255, 255, .7)!important
+                    },
+                    catalogServer: "//oct8neeucatalogservice.azurewebsites.net/",
+                    botServer: "https://bot-eu.oct8ne.com/",
+                    intervalPresence: 60000
+                };
+
+                $o.enterData = {
+                    idProduct: "19056",
+                    productsViewed: "19056",
+                    statusFromTrigger: "Just Looking",
+                    cannedMessage: $("#canned-message").val(),
+                    searchTerm: "",
+                    vipAction: "",
+                    vipMessage: "",
+                    allowedDepartmentsId: "",
+                    initVideoCall: "undefined"
+
+                };
+
+                $("#canned-message").remove();
+                $o.variablesVisitor.referenceTimeAFK = 21600000;
+                $o.variablesVisitor.status = '';
+                $o.variablesVisitor.tokenVisitor = '';
+                $o.variablesVisitor.domain = '393';
+                $o.variablesVisitor.connection = '';
+                $o.variablesVisitor.pendingMessages = '';
+                $o.variablesVisitor.currencyVisitor = 'EUR';
+                $o.variablesVisitor.sessionSummaryId = '0';
+                $o.variablesVisitor.soundNotificationEnabled = 'True'; //Viene de BBDD
+
+
+                //MOSRAR BOLITA ROJA PENDING MESSAGES
+                if ($o.variablesVisitor.pendingMessages) {
+                    $("#warning-visitor").html($o.variablesVisitor.pendingMessages).show();
+                };
+
+                //FUNCION AUXILIAR "TO KNOW IE"
+                var isNotIE = function isIE () {
+                    var userAgent = window.navigator.userAgent.toLowerCase(),
+                        appName = window.navigator.appName;
+                    return !( appName === 'Microsoft Internet Explorer' || (appName === 'Netscape' && userAgent.indexOf('trident') > -1) );
+                };
+
+                //OPENTOK CON IE NECESITA DE UN PLUGIN PARA INSTALAR.
+                var checkProvider = $("#conference-provider").val();
+                if (checkProvider == 'opentok' && !isNotIE() && !OT.checkSystemRequirements() ) {
+                    parent.postMessage("COVIEWERLOADED", "*");
+                };
+
+                $o.core.init();
+                $o.rewrite.init();
+            };
+
+            //CONTROL DE INACTIVIDAD AFK
+            $(".custom-body").not("#minimize-by-menu").on("click", function () { //Antes era "all-wrapper"
+                var clickNow = new Date();
+                if ((clickNow - $o.variablesVisitor.lastInteractionAFK) > $o.variablesVisitor.referenceTimeAFK) {
+                    $o.variablesVisitor.sendCookiesToApi($o.variablesVisitor.nameFunction.deleteCookies, [{ cookie: $o.cookies.tokenSession, value: "" }, { cookie: $o.cookies.lastInteractionAFK, value: "" },]); //Para asegurar que es un visitor nuevo. By Gerard!
+                    if ($.connection.hub.state != $.signalR.connectionState.disconnected) $.connection.hub.stop();
+                    if ($o.variablesVisitor.coviewerStatus !== "MINIMIZED") {
+                        $("#lay-AFK .afk-content-advice").text(culture.coviewer.AdviceAFK1);
+                        $("#lay-AFK").show();
+                        $("#chat-input").blur();
+                    } else {
+                        $("#lay-AFK").hide();
+                    }
+                }
+            });
+
+            
+                var maxPresenceRepetitions = 1800000 / $o.settings.intervalPresence; //7200000 milliseconds in 2h
+                var totalPresenceRepetitions = 1;
+
+            function pingPresence() {
+                    if (maxPresenceRepetitions <= totalPresenceRepetitions) {
+                        clearInterval(pingPresenceInterval);
+                        $o.storage.local.set("oct8ne-presence-ping", $o.core.localStorageActions.REMOVE)
+                        return;
+                    }
+
+                    if ($o.core.globalVariables.sessionFinalized === false) {
+                            $.post("https://oct8neeupresence.azurewebsites.net/presence/addPresence?interval=" +
+                                        $o.settings.intervalPresence +
+                                        "&domainId=" +
+                                        $o.core.globalVariables.domainId).fail(function(xhr, status, error) {
+                                        clearInterval(pingPresenceInterval);
+                                        $o.storage.local.set("oct8ne-presence-ping", $o.core.localStorageActions.REMOVE)
+                                    });
+                    }
+                    if ($o.core.globalVariables.sessionFinalized === true) {
+                        clearInterval(pingPresenceInterval);
+                       $o.storage.local.set("oct8ne-presence-ping", $o.core.localStorageActions.REMOVE)
+                    }
+                    totalPresenceRepetitions = totalPresenceRepetitions + 1;
+                };
+
+            if ($o.storage.local.get("oct8ne-presence-ping") == undefined) {
+                    pingPresence();
+                }
+
+                var pingPresenceInterval = setInterval(function() {
+                        var countPrenseceLoop = 1000;
+                    var actualLoop = $o.storage.local.get("oct8ne-presence-ping");
+
+                        if (actualLoop === "NaN") {
+                            pingPresence();
+                            actualLoop = countPrenseceLoop;
+                        }
+                        if (actualLoop != undefined) {
+                            countPrenseceLoop = parseInt(actualLoop) + 1000;
+                        }
+
+                        if (countPrenseceLoop >= $o.settings.intervalPresence) {
+                            if ($o.core.agentsConnected == false || !$o.variablesVisitor.visitorsOverflow) {
+                                clearInterval(pingPresenceInterval);
+                               $o.storage.local.set("oct8ne-presence-ping", $o.core.localStorageActions.REMOVE)
+                            } else {
+                                pingPresence();
+                                countPrenseceLoop = 0;
+                            }
+                        }
+                        $o.storage.local.set("oct8ne-presence-ping", countPrenseceLoop);
+                    },
+                    1000);
+            
+
+        });
+            </script>
+        
+    </body></html>
